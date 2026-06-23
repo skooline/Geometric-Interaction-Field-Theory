@@ -16,7 +16,7 @@ Date: May 2026
 
 This repository contains the core framework and numerical simulation for the research paper: **"Riemannian Geometry and Geometric Field Equations of Two-Agent Interaction Dynamics: From Time-Dependent to State-Dependent Manifolds"**.
 
-Traditional multi-agent systems rely on phenomenological force laws or heuristic potential fields. This research reformulates behavioral interactions as an emergent property of space-time geometry itself. By treating interaction constraints as metric deformations on a Riemannian manifold $\mathcal{M}=\mathbb{R}_{t}\times\mathbb{R}_{I_{S}}^{2}$, we derive agent trajectories directly from **Geodesic Flow** dictated by the **Interaction Field Equation**:
+Traditional multi-agent systems rely on phenomenological force laws or heuristic potential fields. This research reformulates behavioral interactions as an emergent property of space-time geometry itself. By treating interaction constraints as metric deformations on a Riemannian manifold $\mathcal{M} = \mathbb{R}_t \times \mathbb{R}_I^2$, we derive agent trajectories directly from **Geodesic Flow** dictated by the **Interaction Field Equation**:
 
 $$R_{\mu\nu} - \frac{1}{2}R g_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa T_{\mu\nu}$$
 

@@ -1,5 +1,7 @@
 # Geometric Interaction Field Theory (GIFT) 
 
+![riemannian](https://github.com/skooline/Riemannian-Geometry-of-Two-Agent-Interaction-Dynamics-and-Emotional-Healing/blob/main/riemannian.gif)
+
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

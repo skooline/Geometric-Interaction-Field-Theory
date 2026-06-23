@@ -61,7 +61,7 @@ The mathematical architecture of the model computes the space-time curvature thr
 Ensure you have Python 3.10 or higher installed. Clone the repository and install the dependencies:
 
 ```bash
-git clone [https://github.com/yourusername/geometric-ift.git](https://github.com/yourusername/geometric-ift.git)
+git clone [https://github.com/skooline/Geometric-Interaction-Field-Theory.git](https://github.com/skooline/Geometric-Interaction-Field-Theory.git)
 cd geometric-ift
 pip install numpy sympy matplotlib
 

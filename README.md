@@ -26,6 +26,7 @@ Where $T_{\mu\nu}$ represents the behavioral energy-momentum source tensor (perc
 
 The mathematical architecture of the model computes the space-time curvature through a rigorous symbolic geometry pipeline using `SymPy`:
 
+```
 [Interaction Rule Matrix] \gamma(t, I_S)
 │
 ▼
@@ -42,7 +43,7 @@ The mathematical architecture of the model computes the space-time curvature thr
 │
 ▼
 [Einstein Tensor]      G_{\mu\nu} = R_{\mu\nu} - 1/2 * R * g_{\mu\nu}
-
+```
 ---
 
 ## ⚡ Features

@@ -44,7 +44,7 @@ The mathematical architecture of the model computes the space-time curvature thr
 [Christoffel Symbols]    \Gamma^\lambda_{\mu\nu}
 │
 ▼
-[Einstein Tensor]      G_{\mu\nu} = R_{\mu\nu} - 1/2 * R * g_{\mu\nu}
+[Einstein-like Tensor]      G_{\mu\nu} = R_{\mu\nu} - 1/2 * R * g_{\mu\nu}
 ```
 ---
 

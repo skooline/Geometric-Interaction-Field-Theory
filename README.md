@@ -93,23 +93,6 @@ The script initiates a dual-axis Matplotlib animation:
 
 ---
 
-## 📖 Citation
-
-If you use this framework or mathematical methodology in your research, please cite the foundational paper:
-
-```bibtex
-@article{pinmook2026geometric,
-  title={Riemannian Geometry and Geometric Field Equations of Two-Agent Interaction Dynamics: From Time-Dependent to State-Dependent Manifolds},
-  author={Pinmook, Chewin},
-  journal={ResearchGate / Submissions},
-  year={2026},
-  month={May}
-}
-
-```
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.

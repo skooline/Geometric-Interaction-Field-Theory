@@ -20,7 +20,7 @@ Traditional multi-agent systems rely on phenomenological force laws or heuristic
 
 $$R_{\mu\nu} - \frac{1}{2}R g_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa T_{\mu\nu}$$
 
-Where $T_{\mu\nu}$ represents the behavioral interaction source tensor (a cumulative of other $\gamma(t, I_S)$), and $g_{\mu\nu}$ is the metric tensor with a state-dependent spacetime $\gamma(t, I_S)$.
+Where $T_{\mu\nu}$ represents the behavioral interaction source tensor (a cumulative of other $\gamma(t, I_S)$ ), and $g_{\mu\nu}$ is the metric tensor with a state-dependent spacetime $\gamma(t, I_S)$.
 
 ---
 

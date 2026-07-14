@@ -1,4 +1,4 @@
-# Interaction Manifolds & Geometric Information Field Theory (GIFT) Simulation
+# Geometric Information Field Theory (GIFT) Simulation
 
 ![https://github.com/skooline/Geometric-Interaction-Field-Theory/refs/heads/main/GIFT.png](https://github.com/skooline/Geometric-Interaction-Field-Theory/blob/main/GIFT.png)
 

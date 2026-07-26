@@ -94,7 +94,7 @@ Where:
 
 ## 🛣️ Roadmap
 
-- [x] Theoretical formulation of Riemannian Information Field Theory.
+- [x] Theoretical formulation of Riemannian interaction Field Theory.
 - [x] Tensor field formulation for multi-agent reinforcement learning.
 - [x] Real-time metric solver (`interaction_manifold_realtime.py`).
 - [ ] CUDA/GPU acceleration for high-dimensional tensor operations.

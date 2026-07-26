@@ -79,9 +79,9 @@ python interaction_manifold_realtime.py
 
 The governing metric evolution on the interaction manifold is expressed as:
 
-$$ rac{\partial g_{ij}}{\partial t} = -2 R_{ij} + 
-abla_i V_j + 
-abla_j V_i + \mathcal{T}_{ij}^{	ext{RL}} $$
+$$ \frac{\partial g_{ij}}{\partial t} = -2 R_{ij} + 
+\nabla_i V_j + 
+\nabla_j V_i + \mathcal{T}_{ij}^{	ext{RL}} $$
 
 Where:
 * $R_{ij}$ is the **Ricci curvature tensor** of the interaction field.

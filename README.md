@@ -35,7 +35,7 @@
 ### 2. ⚡ Reinforcement Source Tensor
 * **File:** `Reinforcement source tensor.pdf`
 * **Key Concept:** Replaces scalar reward signals with localized tensor field sources $\mathcal{T}_{\mu
-u}$, propagating policy updates across interaction manifolds using field-theoretic PDEs.
+\nu}$, propagating policy updates across interaction manifolds using field-theoretic PDEs.
 
 ### 3. 🔄 Discrete & Continuous Mechanics
 * **File:** `Discrete & Continuous.pdf`

@@ -3,7 +3,7 @@
 > **A Unified Framework for Real-time Manifold Dynamics, Interaction Field Theory (IFT), Reinforcement Source Tensors, and Continuous-Discrete Affective Systems.**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Math](https://img.shields.io/badge/Domain-Information%20Field%20Theory-purple.svg?style=for-the-badge)](https://github.com)
+[![Math](https://img.shields.io/badge/Domain-Interaction%20Field%20Theory-purple.svg?style=for-the-badge)](https://github.com)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active%20Research-orange.svg?style=for-the-badge)]()
 
@@ -17,7 +17,7 @@
 
 ```
 .
-├── 📄 Geometric IFT.pdf                # Differential Geometry & Information Field Theory
+├── 📄 Geometric IFT.pdf                # Differential Geometry & Interaction Field Theory
 ├── 📄 Reinforcement source tensor.pdf  # High-dimensional Reinforcement Learning Field Tensors
 ├── 📄 Discrete & Continuous.pdf        # Hybrid Discrete-Continuous State Space Transitions
 ├── 📄 Emotion.pdf                      # Affective Manifolds & Cognitive Dynamics
@@ -28,9 +28,9 @@
 
 ## 🔬 Core Theoretical Modules
 
-### 1. 📐 Geometric Information Field Theory (IFT)
+### 1. 📐 Geometric Interaction Field Theory (IFT)
 * **File:** `Geometric IFT.pdf`
-* **Key Concept:** Formulates Bayesian field inference on curved Riemannian manifolds. Computes metric tensor evolution $g_{ij}$ and connections $\Gamma_{bc}^a$ under non-Euclidean information geometry.
+* **Key Concept:** Formulates Interaction manifold on curved Riemannian manifolds. Computes metric tensor evolution $g_{ij}$ and connections $\Gamma_{bc}^a$ under non-Euclidean geometry.
 
 ### 2. ⚡ Reinforcement Source Tensor
 * **File:** `Reinforcement source tensor.pdf`

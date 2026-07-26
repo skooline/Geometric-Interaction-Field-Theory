@@ -11,7 +11,7 @@
 
 ## 📌 Overview
 
-**GIFT** is a theoretical and computational framework designed to unify high-dimensional continuous field dynamics with discrete operational states. By modeling agent interactions, emotional cognitive dynamics, and reinforcement mechanisms onto differential geometric manifolds, this repository bridges non-linear dynamic systems, Information Field Theory (IFT), and real-time computational geometry.
+**GIFT** is a theoretical and computational framework designed to unify high-dimensional continuous field dynamics with discrete operational states. By modeling agent interactions, emotional cognitive dynamics, and reinforcement mechanisms onto differential geometric manifolds, this repository bridges non-linear dynamic systems, Interaction Field Theory (IFT), and real-time computational geometry.
 
 ---
 
@@ -56,7 +56,7 @@ The core script `interaction_manifold_realtime.py` provides an interactive, real
 ### Key Features of `interaction_manifold_realtime.py`:
 - ⏱️ **Real-time Integration:** High-performance numerical integration of field equations.
 - 🌐 **Manifold Deformation:** Live tracking of metric tensor dynamics under external source excitation.
-- 🎨 **Visual Output:** Dynamic 3D/2D projection of vector fields and potential energy surfaces.
+- 🎨 **Visual Output:** Dynamic 3D/2D projection of vector fields and Curvature of surfaces.
 
 ---
 

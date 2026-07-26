@@ -1,6 +1,6 @@
 # Geometric Information Field Theory (GIFT) Simulation
 
-![https://github.com/skooline/Geometric-Interaction-Field-Theory/refs/heads/main/GIFT.png](https://github.com/skooline/Geometric-Interaction-Field-Theory/blob/main/GIFT.png)
+![https://github.com/skooline/Geometric-Interaction-Field-Theory/refs/heads/main/interaction_manifold.gif](https://github.com/skooline/Geometric-Interaction-Field-Theory/blob/main/interaction_manifold.gif)
 
 Welcome to the research and numerical simulation repository for **Geometric Information Field Theory (GIFT)** and **Interaction Manifolds**. This framework bridges **Differential Geometry**, **Fokker-Planck dynamics**, and **Reinforcement Learning (RL)** to model agent behavior, strategic interaction densities, and dynamic landscape transformations.
 

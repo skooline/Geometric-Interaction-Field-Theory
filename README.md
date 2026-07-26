@@ -2,7 +2,7 @@
 
 > **A Unified Framework for Real-time Manifold Dynamics, Interaction Field Theory (IFT), Reinforcement Source Tensors, and Continuous-Discrete Affective Systems.**
 
-[!https://github.com/skooline/Geometric-Interaction-Field-Theory/blob/main/interaction_manifold.gif](https://github.com/skooline/Geometric-Interaction-Field-Theory/blob/main/interaction_manifold.gif)
+[!https://github.com/skooline/Geometric-Interaction-Field-Theory/blob/main/interaction_manifold.gif](https://raw.githubusercontent.com/skooline/Geometric-Interaction-Field-Theory/main/interaction_manifold.gif)
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Math](https://img.shields.io/badge/Domain-Interaction%20Field%20Theory-purple.svg?style=for-the-badge)](https://github.com)

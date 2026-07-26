@@ -7,11 +7,9 @@ Welcome to the research and numerical simulation repository for **Geometric Info
 ## 📁 Repository Structure
 
 ```text
-├── 2d+3d.py                      # Core simulation script featuring concurrent 2D & 3D real-time visualization
-├── GIFT.png                      # Architectural diagram / output preview of Geometric IFT
+├── interaction_manifold_realtime.py# Core simulation script featuring concurrent 2D & 3D real-time visualization
 ├── Geometric IFT.pdf            # Primary theoretical paper on Geometric Information Field Theory
 ├── reinforcement source tensor.pdf# Academic paper establishing the Reinforcement Source Tensor formulation
-├── interaction_manifold.pdf      # Detailed notes on mathematical metrics and curvature configurations
 ├── Discrete & Continuous.pdf     # Comparative work analyzing network discrete vs. field continuous modeling
 └── Emotion.pdf                   # Applied field theory case study on human psychological & emotional dynamics
 ```

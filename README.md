@@ -110,7 +110,7 @@ If you find this research work useful, please cite our papers in your academic p
 
 ```bibtex
 @article{gift2026,
-  title={Geometric Information Field Theory and Reinforcement Source Tensors in Dynamic Affective Manifolds},
+  title={Geometric Interaction Field Theory and Reinforcement Source Tensors in Dynamic Affective Manifolds},
   author={Chewin Pinmook},
   year={2026},
   journal={Repository of Continuous & Discrete Field Dynamics}

@@ -109,16 +109,12 @@ Distributed under the **MIT License**. See `LICENSE` for details.
 If you find this research work useful, please cite our papers in your academic publications:
 
 ```bibtex
-@article{imgft2026,
+@article{gift2026,
   title={Geometric Information Field Theory and Reinforcement Source Tensors in Dynamic Affective Manifolds},
-  author={Dynamic Systems & Geometry Research Group},
+  author={Chewin Pinmook},
   year={2026},
   journal={Repository of Continuous & Discrete Field Dynamics}
 }
 ```
 
 ---
-
-<p align="center">
-  <i>Developed with ❤️ for Advanced Mathematical Physics & AI Research</i>
-</p>

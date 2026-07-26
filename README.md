@@ -1,28 +1,15 @@
-# 🌌 Interaction Manifold & Geometric Field Theory (IMGFT)
+# 🌌 Geometric Interaction Field Theory (GIFT)
 
-> **A Unified Framework for Real-time Manifold Dynamics, Information Field Theory (IFT), Reinforcement Source Tensors, and Continuous-Discrete Affective Systems.**
+> **A Unified Framework for Real-time Manifold Dynamics, Interaction Field Theory (IFT), Reinforcement Source Tensors, and Continuous-Discrete Affective Systems.**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Math](https://img.shields.io/badge/Domain-Information%20Field%20Theory-purple.svg?style=for-the-badge)](https://github.com)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active%20Research-orange.svg?style=for-the-badge)]()
 
----
-
-```
-  ____       _                      _             __  __             _  __     _     _ 
- |  _ \     | |                    | |           |  \/  |           (_)/ _|   | |   | |
- | |_) | ___| |__   __ ___   _____ | | __ _ _ __ | \  / | __ _ _ __  _| |_ ___| | __| |
- |  _ < / _ \ '_ \ / _` \ \ / / _ \| |/ _` | '__|| |\/| |/ _` | '_ \| |  _/ _ \ |/ _` |
- | |_) |  __/ | | | (_| |\ V / (_) | | (_| | |   | |  | | (_| | | | | | ||  __/ | (_| |
- |____/ \___|_| |_|\__,_| \_/ \___/|_|\__,_|_|   |_|  |_|\__,_|_| |_|_|_| \___|_|\__,_|
-```
-
----
-
 ## 📌 Overview
 
-**IMGFT** is a theoretical and computational framework designed to unify high-dimensional continuous field dynamics with discrete operational states. By modeling agent interactions, emotional cognitive dynamics, and reinforcement mechanisms onto differential geometric manifolds, this repository bridges non-linear dynamic systems, Information Field Theory (IFT), and real-time computational geometry.
+**GIFT** is a theoretical and computational framework designed to unify high-dimensional continuous field dynamics with discrete operational states. By modeling agent interactions, emotional cognitive dynamics, and reinforcement mechanisms onto differential geometric manifolds, this repository bridges non-linear dynamic systems, Information Field Theory (IFT), and real-time computational geometry.
 
 ---
 

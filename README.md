@@ -12,6 +12,7 @@ GIFT is an exploratory mathematical framework for representing interaction-state
 
 ## Revised files
 - `GIFT.py` - reference 2D geometry solver.
+- `GIFT_3D.py` - embedded 3D interaction manifold with intrinsic geodesic integration and animation; scalar curvature is shown as color, not height.
 - `test_gift.py` - invariant/numerical tests.
 - `docs/Geometric_IFT_Revised.tex` - formal model and proofs.
 - `docs/Reinforcement_Source_Tensor_Revised.tex` - tensor definition and transformation requirements.
@@ -25,6 +26,7 @@ Legacy PDFs on `main` are retained for provenance; the revised sources on this b
 pip install numpy matplotlib pytest
 pytest -q
 python GIFT.py
+python GIFT_3D.py
 ```
 
 ## Established vs hypothesized

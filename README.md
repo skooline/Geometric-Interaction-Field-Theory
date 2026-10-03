@@ -1,120 +1,37 @@
-# 🌌 Geometric Interaction Field Theory (GIFT)
+# Geometric Interaction Field Theory (GIFT)
 
-> **A Unified Framework for Real-time Manifold Dynamics, Interaction Field Theory (IFT), Reinforcement Source Tensors, and Continuous-Discrete Affective Systems.**
+GIFT is an exploratory mathematical framework for representing interaction-state dynamics on a differentiable manifold. This revision separates **definitions**, **derived geometry**, and **empirical hypotheses**. Psychological constructs are not treated as physical spacetime quantities, and empirical validation is not claimed without data.
 
-![Interaction Manifold](https://raw.githubusercontent.com/skooline/Geometric-Interaction-Field-Theory/main/interaction_manifold.gif)
+## Mathematical pipeline
+1. Represent specified interaction observations locally by coordinates `I=(I1,I2)` on a 2D manifold.
+2. Define a symmetric source field `T_ij(I)` from measured or modelled variables.
+3. Choose and report a constitutive map `g=C(T)`. The reference solver uses `g=exp(kappa H(T))`, guaranteeing a positive-definite Riemannian metric. This is a modelling assumption, not a fundamental field equation.
+4. Derive the Levi-Civita connection and compute the Ricci tensor and genuine scalar curvature `R=g^ij R_ij`.
+5. Distinguish pure geodesic motion `Dv/dt=0` from forced/damped covariant motion `Dv/dt=F-eta v`.
+6. Fit parameters on training data and test preregistered out-of-sample predictions against simpler baselines.
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Math](https://img.shields.io/badge/Domain-Interaction%20Field%20Theory-purple.svg?style=for-the-badge)](https://github.com)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active%20Research-orange.svg?style=for-the-badge)]()
+## Revised files
+- `GIFT.py` - reference 2D geometry solver.
+- `test_gift.py` - invariant/numerical tests.
+- `docs/Geometric_IFT_Revised.tex` - formal model and proofs.
+- `docs/Reinforcement_Source_Tensor_Revised.tex` - tensor definition and transformation requirements.
+- `docs/Emotion_Dynamics_Revised.tex` - affective claims recast as falsifiable hypotheses.
+- `docs/VALIDATION.md` - proof obligations and empirical falsification plan.
 
-## 📌 Overview
+Legacy PDFs on `main` are retained for provenance; the revised sources on this branch supersede their mathematical claims.
 
-**GIFT** is a theoretical and computational framework designed to unify high-dimensional continuous field dynamics with discrete operational states. By modeling agent interactions, emotional cognitive dynamics, and reinforcement mechanisms onto differential geometric manifolds, this repository bridges non-linear dynamic systems, Interaction Field Theory (IFT), and real-time computational geometry.
-
----
-
-## 🗂️ Repository Structure
-
-```
-.
-├── 📄 Geometric IFT.pdf                # Differential Geometry & Interaction Field Theory
-├── 📄 Reinforcement source tensor.pdf  # High-dimensional Reinforcement Learning Field Tensors
-├── 📄 Discrete & Continuous.pdf        # Hybrid Discrete-Continuous State Space Transitions
-├── 📄 Emotion.pdf                      # Affective Manifolds & Cognitive Dynamics
-└── 🐍 interaction_manifold_realtime.py # Real-time Python implementation for Manifold Solvers
-```
-
----
-
-## 🔬 Core Theoretical Modules
-
-### 1. 📐 Geometric Interaction Field Theory (IFT)
-* **File:** `Geometric IFT.pdf`
-* **Key Concept:** Formulates Interaction manifold on curved Riemannian manifolds. Computes metric tensor evolution $g_{ij}$ and connections $\Gamma_{bc}^a$ under non-Euclidean geometry.
-
-### 2. ⚡ Reinforcement Source Tensor
-* **File:** `Reinforcement source tensor.pdf`
-* **Key Concept:** Replaces scalar reward signals with localized tensor field sources $\mathcal{T}_{\mu
-\nu}$, propagating policy updates across interaction manifolds using field-theoretic PDEs.
-
-### 3. 🔄 Discrete & Continuous Mechanics
-* **File:** `Discrete & Continuous.pdf`
-* **Key Concept:** Establishes dual representations for system phase spaces, bridging topological quantum-like discrete jumps with smooth continuous geodesics.
-
-### 4. 🧠 Affective & Emotion Dynamics
-* **File:** `Emotion.pdf`
-* **Key Concept:** Maps psychological state transitions and cognitive vector fields onto dynamic attractor basins on low-dimensional manifolds.
-
----
-
-## 💻 Computation & Real-time Simulation
-
-The core script `interaction_manifold_realtime.py` provides an interactive, real-time solver for field interactions and tensor metric deformation.
-
-### Key Features of `interaction_manifold_realtime.py`:
-- ⏱️ **Real-time Integration:** High-performance numerical integration of field equations.
-- 🌐 **Manifold Deformation:** Live tracking of metric tensor dynamics under external source excitation.
-- 🎨 **Visual Output:** Dynamic 3D/2D projection of vector fields and Curvature of surfaces.
-
----
-
-## 🚀 Quick Start
-
-### 1. Prerequisites
-Ensure you have Python 3.10+ and the required scientific computing libraries installed:
-
+## Run
 ```bash
-pip install numpy scipy matplotlib torch
+pip install numpy matplotlib pytest
+pytest -q
+python GIFT.py
 ```
 
-### 2. Run Real-time Engine
+## Established vs hypothesized
+**Mathematical consequences conditional on a smooth positive-definite metric:** the unique Levi-Civita connection, coordinate-covariant curvature tensors, the geodesic equation, and positivity of the reference exponential metric.
 
-```bash
-python interaction_manifold_realtime.py
-```
+**Model assumptions:** interaction coordinates, source parameterization, the constitutive source-to-metric map, and psychological interpretation of curvature.
 
----
+**Empirical hypotheses:** whether curvature or geometric trajectories improve held-out prediction relative to appropriate baselines. Differential geometry alone cannot prove these claims.
 
-## 📐 Mathematical Formulation Snippet
-
-The governing metric evolution on the interaction manifold is expressed as:
-
-$$ \frac{\partial g_{ij}}{\partial t} = -2 R_{ij} + 
-\nabla_i V_j + 
-\nabla_j V_i + \mathcal{T}_{ij}^{	ext{RL}} $$
-
-Where:
-* $R_{ij}$ is the **Ricci curvature tensor** of the interaction field.
-* $V_i$ represents the **affective-cognitive drift vector**.
-* $\mathcal{T}_{ij}^{	ext{RL}}$ is the **Reinforcement Source Tensor**.
-
----
-
-## 🛣️ Roadmap
-
-- [x] Theoretical formulation of Riemannian interaction Field Theory.
-- [x] Tensor field formulation for multi-agent reinforcement learning.
-- [x] Real-time metric solver (`interaction_manifold_realtime.py`).
-- [ ] CUDA/GPU acceleration for high-dimensional tensor operations.
-- [ ] WebGL interactive manifold visualizer dashboard.
-
----
-
-## 📄 License & Citation
-
-Distributed under the **MIT License**. See `LICENSE` for details.
-
-If you find this research work useful, please cite our papers in your academic publications:
-
-```bibtex
-@article{gift2026,
-  title={Geometric Interaction Field Theory and Reinforcement Source Tensors in Dynamic Affective Manifolds},
-  author={Chewin Pinmook},
-  year={2026},
-  journal={Repository of Continuous & Discrete Field Dynamics}
-}
-```
-
----
+Status: active exploratory research, rigorous revision (2026).

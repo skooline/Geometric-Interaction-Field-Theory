@@ -1,0 +1,15 @@
+\documentclass[11pt]{article}\usepackage{amsmath,amssymb,amsthm,geometry}\geometry{margin=1in}\newtheorem{proposition}{Proposition}\title{Geometric Interaction Field Theory: A Rigorous Minimal Formulation}\author{Chewin Pinmook -- revised technical draft}\date{2026}\begin{document}\maketitle
+\begin{abstract}GIFT is formulated as an exploratory geometric model of measured interaction states. Mathematical consequences of a chosen Riemannian metric are separated from empirical claims about behavior. The source-to-metric relation is explicitly constitutive, not a fundamental field law.\end{abstract}
+\section{State manifold}Let $M$ be a smooth two-dimensional manifold with local coordinates $I=(I^1,I^2)$ constructed from specified interaction observables. Coordinate existence alone does not establish a psychological construct.
+\section{Source and metric}Let $T_{ij}(I)$ be a smooth symmetric covariant source field. Define symmetric $H(T)$ and the reference constitutive law $g(I)=\exp(\kappa H(T(I)))$.
+\begin{proposition}For real symmetric $H$ and real $\kappa$, $g=\exp(\kappa H)$ is symmetric positive definite.\end{proposition}\begin{proof}By the spectral theorem $H=Q\Lambda Q^T$. Thus $g=Q\exp(\kappa\Lambda)Q^T$, with eigenvalues $e^{\kappa\lambda_a}>0$.\end{proof}
+\section{Connection and curvature}The Levi--Civita connection is
+\[\Gamma^k{}_{ij}=\tfrac12g^{k\ell}(\partial_i g_{j\ell}+\partial_jg_{i\ell}-\partial_\ell g_{ij}).\]
+Define
+\[R^\rho{}_{\sigma\mu\nu}=\partial_\mu\Gamma^\rho{}_{\nu\sigma}-\partial_\nu\Gamma^\rho{}_{\mu\sigma}+\Gamma^\rho{}_{\mu\lambda}\Gamma^\lambda{}_{\nu\sigma}-\Gamma^\rho{}_{\nu\lambda}\Gamma^\lambda{}_{\mu\sigma},\quad R_{\sigma\nu}=R^\rho{}_{\sigma\rho\nu},\quad R=g^{ij}R_{ij}.\]
+\begin{proposition}For constant Euclidean $g_{ij}=\delta_{ij}$, $\Gamma^k{}_{ij}=0$ and $R_{ij}=R=0$.\end{proposition}\begin{proof}All coordinate derivatives of $g$ vanish.\end{proof}
+The previous visualization $\|g-I\|_F$ measures metric deformation, not curvature; the revised solver displays $R$.
+\section{Dynamics}Pure geodesic motion satisfies $\ddot I^k+\Gamma^k{}_{ij}\dot I^i\dot I^j=0$. Forced covariant dynamics satisfies $\ddot I^k+\Gamma^k{}_{ij}\dot I^i\dot I^j=F^k-\eta\dot I^k$. They are not interchangeable.
+\section{Optional metric evolution}A time-dependent model class is $\partial_tg_{ij}=-2\alpha R_{ij}+\mathcal L_Vg_{ij}+S_{ij}$. It is a forced geometric flow, not an Einstein equation unless independently derived.
+\section{Empirical status}Geometry proves consequences conditional on $g$; it cannot prove that emotion or reward is curvature. Such links require operational definitions and out-of-sample tests.
+\end{document}

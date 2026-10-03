@@ -1,0 +1,129 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=1in}
+\newtheorem{proposition}{Proposition}
+\title{Geometric Interaction Field Theory: A Rigorous Minimal Formulation}
+\author{Chewin Pinmook -- revised technical draft}
+\date{2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+GIFT is formulated as an exploratory geometric model of measured interaction states. Mathematical consequences of a chosen Riemannian metric are separated from empirical claims about behavior. The source-to-metric relation is a coordinate-covariant constitutive law constructed relative to a positive-definite background metric; it is not claimed to be a fundamental field equation.
+\end{abstract}
+
+\section{State manifold}
+Let $M$ be a smooth two-dimensional manifold with local coordinates $I=(I^1,I^2)$ constructed from specified interaction observables. Coordinate existence alone does not establish a psychological construct.
+
+\section{Covariant source-to-metric construction}
+Let $g^{(0)}$ be a smooth positive-definite background metric and let $T$ be a smooth symmetric covariant $(0,2)$ tensor field. Define the $g^{(0)}$-trace
+\[
+\operatorname{tr}_{0}T=(g^{(0)})^{ij}T_{ij}
+\]
+and the invariant isotropic/deviatoric decomposition
+\[
+T_{\mathrm{iso}}=\frac{1}{n}(\operatorname{tr}_{0}T)g^{(0)},\qquad
+T_{\mathrm{dev}}=T-T_{\mathrm{iso}},\qquad n=2.
+\]
+For scalar constitutive weights $a,b$, set
+\[
+H=aT_{\mathrm{iso}}+bT_{\mathrm{dev}}.
+\]
+Raise one index with the background metric:
+\[
+A^i{}_j=(g^{(0)})^{ik}H_{kj}.
+\]
+Then define the deformed metric by
+\[
+\boxed{
+g(u,v)=g^{(0)}\!\left(e^{\kappa A}u,v\right).
+}
+\]
+
+\begin{proposition}[Coordinate covariance]
+The above definition produces a well-defined covariant $(0,2)$ tensor field $g$ independent of the chosen chart.
+\end{proposition}
+\begin{proof}
+Under a coordinate change with Jacobian $J=\partial x/\partial x'$, $g^{(0)}$ and $H$ transform by congruence,
+\[
+g^{(0)\prime}=J^T g^{(0)}J,\qquad H'=J^THJ.
+\]
+Hence the mixed tensor transforms by similarity,
+\[
+A'=(g^{(0)\prime})^{-1}H'=J^{-1}AJ.
+\]
+The matrix exponential respects similarity:
+\[
+e^{\kappa A'}=J^{-1}e^{\kappa A}J.
+\]
+Therefore
+\[
+g'=g^{(0)\prime}e^{\kappa A'}
+=J^T g^{(0)}J\,J^{-1}e^{\kappa A}J
+=J^T gJ,
+\]
+which is precisely the transformation law for a covariant $(0,2)$ tensor.
+\end{proof}
+
+\begin{proposition}[Positive definiteness]
+If $g^{(0)}$ is positive definite and $H$ is symmetric, then $g$ is positive definite for every real $\kappa$.
+\end{proposition}
+\begin{proof}
+The endomorphism $A=(g^{(0)})^{-1}H$ is self-adjoint with respect to $g^{(0)}$. Therefore there exists a $g^{(0)}$-orthonormal eigenbasis with real eigenvalues $\lambda_a$. In that basis,
+\[
+g(v,v)=\sum_a e^{\kappa\lambda_a}v_a^2>0
+\]
+for every nonzero $v$, since $e^{\kappa\lambda_a}>0$.
+\end{proof}
+
+\section{Connection and curvature}
+The Levi--Civita connection is
+\[
+\Gamma^k{}_{ij}=\frac12g^{k\ell}
+(\partial_i g_{j\ell}+\partial_jg_{i\ell}-\partial_\ell g_{ij}).
+\]
+Define
+\[
+R^\rho{}_{\sigma\mu\nu}
+=\partial_\mu\Gamma^\rho{}_{\nu\sigma}
+-\partial_\nu\Gamma^\rho{}_{\mu\sigma}
++\Gamma^\rho{}_{\mu\lambda}\Gamma^\lambda{}_{\nu\sigma}
+-\Gamma^\rho{}_{\nu\lambda}\Gamma^\lambda{}_{\mu\sigma},
+\]
+\[
+R_{\sigma\nu}=R^\rho{}_{\sigma\rho\nu},
+\qquad
+R=g^{ij}R_{ij}.
+\]
+
+\begin{proposition}
+For constant Euclidean $g_{ij}=\delta_{ij}$, $\Gamma^k{}_{ij}=0$ and $R_{ij}=R=0$.
+\end{proposition}
+\begin{proof}
+All coordinate derivatives of $g$ vanish.
+\end{proof}
+
+\section{Dynamics}
+Pure geodesic motion satisfies
+\[
+\ddot I^k+\Gamma^k{}_{ij}\dot I^i\dot I^j=0.
+\]
+Forced covariant dynamics satisfies
+\[
+\ddot I^k+\Gamma^k{}_{ij}\dot I^i\dot I^j=F^k-\eta\dot I^k.
+\]
+They are not interchangeable.
+
+\section{Optional metric evolution}
+A time-dependent model class is
+\[
+\partial_tg_{ij}
+=-2\alpha R_{ij}
++\mathcal L_Vg_{ij}
++S_{ij}.
+\]
+This is a forced geometric flow, not an Einstein equation unless independently derived. In two dimensions the Einstein tensor vanishes identically, so a nontrivial Einstein-like equation cannot be obtained by directly setting $G_{ij}=\kappa T_{ij}$.
+
+\section{Empirical status}
+Geometry proves consequences conditional on the chosen constitutive law and measured source. It cannot prove that emotion, reward, personality type, or human interaction is curvature. Such identifications require operational definitions, parameter identifiability, held-out tests, and replication.
+
+\end{document}

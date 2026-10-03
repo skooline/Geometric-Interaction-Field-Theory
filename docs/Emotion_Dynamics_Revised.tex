@@ -1,0 +1,10 @@
+\documentclass[11pt]{article}\usepackage{amsmath,amssymb,amsthm,geometry}\geometry{margin=1in}\newtheorem{hypothesis}{Hypothesis}\title{Affective Dynamics in GIFT: Testable Hypotheses}\author{Chewin Pinmook -- revised technical draft}\date{2026}\begin{document}\maketitle
+\begin{abstract}Affective interpretations are restricted to operational, falsifiable hypotheses. Curvature is a property of a fitted interaction metric; it is not identified with emotion by definition.\end{abstract}
+\section{Representation}Let $I(t)$ be an observable or latent interaction-state trajectory with a documented measurement model. Let $g_\theta(I)$ be a fitted positive-definite metric and $R_\theta(I)$ its scalar curvature.
+\section{Competing dynamics}Model G uses $D\dot I/dt=0$. Model F uses $D\dot I/dt=F_\beta(I,t)-\eta\dot I$. Baselines should include non-geometric linear/state-space and flexible nonlinear alternatives.
+\section{Testable claims}\begin{hypothesis}A preregistered curvature feature $R_\theta(I_t)$ improves held-out prediction of a specified affective or behavioral outcome beyond matched baseline predictors.\end{hypothesis}
+\begin{hypothesis}The geometric model predicts held-out trajectories better than an otherwise comparable Euclidean model after accounting for complexity.\end{hypothesis}
+Failure counts against the corresponding claim; curvature should not be reinterpreted post hoc.
+\section{Limits}Terms such as emotion curvature, rational geodesic, trauma horizon, or reward curvature remain metaphors unless tied to validated observables and discriminating predictions. Clinical claims require independent clinical validation.
+\section{Statistics}Use nested cross-validation or a fixed train/validation/test split, proper scoring rules, uncertainty estimation, calibration, preregistered primary outcomes and external replication.
+\end{document}

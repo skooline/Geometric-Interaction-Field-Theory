@@ -1,0 +1,9 @@
+\documentclass[11pt]{article}\usepackage{amsmath,amssymb,amsthm,geometry}\geometry{margin=1in}\newtheorem{definition}{Definition}\newtheorem{proposition}{Proposition}\title{Reinforcement Source Fields in GIFT}\author{Chewin Pinmook -- revised technical draft}\date{2026}\begin{document}\maketitle
+\section{Definition}\begin{definition}A reinforcement source tensor is a smooth symmetric covariant $(0,2)$ field $T$ whose components obey $T'_{ab}=(\partial I^i/\partial I'^a)(\partial I^j/\partial I'^b)T_{ij}$ on overlapping charts.\end{definition}
+A matrix-shaped collection of numbers is not automatically a tensor; the transformation rule is essential.
+\section{Operational construction}Measured variables $z(t)$ generate a source only after a map $\Phi:z\mapsto T$ is specified. A Gaussian source used in simulation is a parameterization, not evidence for Gaussian reinforcement geometry.
+\section{Metric coupling}The reference model uses $g=\exp(\kappa H(T))$. This guarantees a Riemannian metric but is a constitutive assumption rather than a derivation of $g$ from $T$.
+\begin{proposition}For symmetric $H$, $\exp(\kappa H)$ is positive definite.\end{proposition}\begin{proof}Apply the spectral theorem; all exponential eigenvalues are positive.\end{proof}
+\section{Conservation and identifiability}No analogue of physical stress-energy conservation is assumed unless derived from a stated symmetry or action. Identifiability must be checked because distinct source parameterizations may induce similar metrics.
+\section{Validation}Require measurement reliability, coordinate specification, training-only parameter estimation, uncertainty, component ablation, held-out comparison with simpler models and replication.
+\end{document}

@@ -1,9 +1,89 @@
-\documentclass[11pt]{article}\usepackage{amsmath,amssymb,amsthm,geometry}\geometry{margin=1in}\newtheorem{definition}{Definition}\newtheorem{proposition}{Proposition}\title{Reinforcement Source Fields in GIFT}\author{Chewin Pinmook -- revised technical draft}\date{2026}\begin{document}\maketitle
-\section{Definition}\begin{definition}A reinforcement source tensor is a smooth symmetric covariant $(0,2)$ field $T$ whose components obey $T'_{ab}=(\partial I^i/\partial I'^a)(\partial I^j/\partial I'^b)T_{ij}$ on overlapping charts.\end{definition}
-A matrix-shaped collection of numbers is not automatically a tensor; the transformation rule is essential.
-\section{Operational construction}Measured variables $z(t)$ generate a source only after a map $\Phi:z\mapsto T$ is specified. A Gaussian source used in simulation is a parameterization, not evidence for Gaussian reinforcement geometry.
-\section{Metric coupling}The reference model uses $g=\exp(\kappa H(T))$. This guarantees a Riemannian metric but is a constitutive assumption rather than a derivation of $g$ from $T$.
-\begin{proposition}For symmetric $H$, $\exp(\kappa H)$ is positive definite.\end{proposition}\begin{proof}Apply the spectral theorem; all exponential eigenvalues are positive.\end{proof}
-\section{Conservation and identifiability}No analogue of physical stress-energy conservation is assumed unless derived from a stated symmetry or action. Identifiability must be checked because distinct source parameterizations may induce similar metrics.
-\section{Validation}Require measurement reliability, coordinate specification, training-only parameter estimation, uncertainty, component ablation, held-out comparison with simpler models and replication.
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=1in}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\title{Reinforcement Source Fields in GIFT}
+\author{Chewin Pinmook -- revised technical draft}
+\date{2026}
+\begin{document}
+\maketitle
+
+\section{Definition}
+\begin{definition}
+A reinforcement source tensor is a smooth symmetric covariant $(0,2)$ field $T$ whose components obey
+\[
+T'_{ab}=
+\frac{\partial I^i}{\partial I'^a}
+\frac{\partial I^j}{\partial I'^b}
+T_{ij}
+\]
+on overlapping charts.
+\end{definition}
+A matrix-shaped collection of values is not automatically a tensor; the transformation rule is essential.
+
+\section{Operational construction}
+Measured variables $z(t)$ generate a geometric source only after a map
+\[
+\Phi:z\longmapsto T\in\Gamma(S^2T^*M)
+\]
+is specified. A Gaussian source used in simulation is therefore a chart-level parameterization unless its coordinate transformation behavior is explicitly defined.
+
+\section{Background metric and invariant decomposition}
+Let $g^{(0)}$ be a positive-definite background metric. Define
+\[
+\operatorname{tr}_0T=(g^{(0)})^{ij}T_{ij},
+\]
+\[
+T_{\mathrm{iso}}=\frac{1}{n}(\operatorname{tr}_0T)g^{(0)},\qquad
+T_{\mathrm{dev}}=T-T_{\mathrm{iso}}.
+\]
+Both pieces are covariant $(0,2)$ tensors. Let
+\[
+H=aT_{\mathrm{iso}}+bT_{\mathrm{dev}}.
+\]
+
+\section{Coordinate-covariant metric coupling}
+Raise one index:
+\[
+A^i{}_j=(g^{(0)})^{ik}H_{kj}.
+\]
+The reference constitutive law is
+\[
+\boxed{
+g(u,v)=g^{(0)}(e^{\kappa A}u,v).
+}
+\]
+Equivalently in a chart,
+\[
+g=g^{(0)}e^{\kappa A}.
+\]
+
+\begin{proposition}
+The construction is coordinate covariant.
+\end{proposition}
+\begin{proof}
+Because $A$ is a $(1,1)$ tensor, under a coordinate change $A'=J^{-1}AJ$. Hence
+\[
+e^{\kappa A'}=J^{-1}e^{\kappa A}J.
+\]
+Combining with $g^{(0)\prime}=J^Tg^{(0)}J$ gives
+\[
+g'=J^TgJ.
+\]
+\end{proof}
+
+\begin{proposition}
+If $g^{(0)}$ is positive definite and $H$ symmetric, then $g$ is positive definite.
+\end{proposition}
+\begin{proof}
+$A$ is self-adjoint with respect to $g^{(0)}$, so it has a $g^{(0)}$-orthonormal eigenbasis and real eigenvalues $\lambda_a$. Then $e^{\kappa A}$ has positive eigenvalues $e^{\kappa\lambda_a}$, and therefore $g(v,v)>0$ for all nonzero $v$.
+\end{proof}
+
+\section{Conservation and identifiability}
+No analogue of physical stress-energy conservation is assumed unless derived from a stated symmetry or action. Distinct source parameterizations may induce similar metrics, so identifiability must be checked empirically.
+
+\section{Validation}
+Require measurement reliability, an explicit coordinate/measurement model, training-only parameter estimation, uncertainty quantification, component ablation, held-out comparison with simpler models, and replication.
+
 \end{document}
